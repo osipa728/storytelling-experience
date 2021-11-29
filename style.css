@@ -127,8 +127,14 @@
     );
 }
 
+.link{
+    margin: auto;
+}
+
 a {
     font-size: 200px;
     color: black;
     display: block;
+    z-index: 1;
+    position: absolute;
 }
