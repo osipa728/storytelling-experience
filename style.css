@@ -126,3 +126,9 @@
         rgb(0, 0, 0) 200px
     );
 }
+
+a {
+    font-size: 200px;
+    color: black;
+    display: block;
+}

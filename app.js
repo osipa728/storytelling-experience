@@ -8,7 +8,7 @@
             updateSpotlight(e);
         });
         window.addEventListener('mouseup', e => {
-            spotlightSize = 'transparent 5s0px, rgba(0, 0, 0, 1) 200px)';
+            spotlightSize = 'transparent 50px, rgba(0, 0, 0, 1) 200px)';
             updateSpotlight(e);
         });
         function updateSpotlight(e) {
