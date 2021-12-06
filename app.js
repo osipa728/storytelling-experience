@@ -1,14 +1,14 @@
     //DOM load event
     window.addEventListener("DOMContentLoaded", () => {
         const spotlight = document.querySelector('.spotlight');
-        let spotlightSize = 'transparent 50px, rgba(0, 0, 0, 1) 200px)';
+        let spotlightSize = 'transparent 50px, rgba(0, 0, 0, 1) 250px)';
         window.addEventListener('mousemove', e => updateSpotlight(e));
         window.addEventListener('mousedown', e => {
             spotlightSize = 'transparent 130px, rgba(0, 0, 0, 1) 150px)';
             updateSpotlight(e);
         });
         window.addEventListener('mouseup', e => {
-            spotlightSize = 'transparent 50px, rgba(0, 0, 0, 1) 200px)';
+            spotlightSize = 'transparent 50px, rgba(0, 0, 0, 1) 250px)';
             updateSpotlight(e);
         });
         function updateSpotlight(e) {
@@ -106,7 +106,7 @@ particlesJS("particles-js",
                         "mode":"repulse"
                     },
                     "onclick":{
-                        "enable":true,
+                        "enable":false,
                         "mode":"push"
                     },
                     "resize":true
@@ -127,7 +127,8 @@ particlesJS("particles-js",
                     },
                     "repulse":{
                         "distance":180,
-                        "duration":0.4
+                        "duration":0.4,
+                        "opacity":1
                     },
                     "push":{
                         "particles_nb":4
